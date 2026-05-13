@@ -28,8 +28,8 @@ PKLCore V2 dirancang dengan estetika **Premium & Futuristik (SaaS/Vercel Vibes)*
 
 ### 1. Sidebar Navigasi (Modular)
 - **DASHBOARD**
-  - `Overview Insight`: Ringkasan performa dan statistik utama.
-  - `Live Monitoring`: Pantauan realtime aktivitas siswa di lapangan.
+  - `Overview Insight`: Pusat kendali utama dengan statistik realtime (Siswa Aktif, DU/DI, Absensi, Issues), Grafik Trend, Live GPS Radar, AI Insights, dan Antrean Validasi.
+  - `Live Monitoring`: Pantauan khusus peta layar penuh untuk aktivitas siswa di lapangan.
 - **DATA UTAMA**
   - `Data Siswa RPL`: Manajemen profil siswa (No, Kelas, NIS, Nama, JK, Tgl Larir, WhatsApp).
   - `Data DU/DI`: Database mitra industri (Nama, Pimpinan, NIP, Pembimbing, Alamat Detail, Rating).
@@ -45,10 +45,13 @@ PKLCore V2 dirancang dengan estetika **Premium & Futuristik (SaaS/Vercel Vibes)*
   - `Settings & API`: Konfigurasi sistem dan integrasi third-party.
 
 ### 2. Dashboard Widgets & Intelligence
-- **Realtime Dashboard:** Mockup data aktif, indikator API Online, dan lencana status (Active, Pending, Offline).
-- **Live Map Tracking:** Simulasi radar GPS dengan titik koordinat. **Smart Alert System** akan berkedip merah jika siswa terdeteksi keluar radius DU/DI.
-- **AI Engine Insight:** Panel rekomendasi penempatan otomatis berdasarkan skill dan prediksi potensi masalah (Dropout/Inactivity detection).
-- **Workflow Queue:** Tabel antrean manajemen pengajuan dengan status dinamis.
+- **Overview Insight Hub:** 
+  - **Header Controls:** Filter Tahun Ajaran, Tombol Export, Search Bar API routes, dan tombol **Quick Action**.
+  - **Realtime Stat Cards:** Siswa PKL Aktif (counter + percentage), DU/DI Terhubung (+ new badge), Absensi Realtime (progress bar), dan Issue/Offline (alert badge).
+  - **Trend Aktivitas & Jurnal:** Grafik multi-layer (Submission vs Validasi) dengan smooth curves dan gradient fill.
+  - **Live GPS Tracking:** Widget peta dengan efek radar, pulsing dots (green/red), dan tombol Full Map.
+  - **AI Engine Insight:** Panel rekomendasi penempatan (Auto/Manual), deteksi dropout/inaktivitas, dan tombol **Tanya AI Assistant**.
+  - **Workflow Queue (Antrean Validasi):** Tabel dinamis untuk tracking status pendaftaran, pembuatan surat (PDF), dan jurnal harian.
 
 ---
 
@@ -87,28 +90,29 @@ PKLCore V2 dirancang dengan estetika **Premium & Futuristik (SaaS/Vercel Vibes)*
 - [ ] Setup Dokumentasi API (Swagger/Scalar).
 
 ### 🎨 Phase 2: UI/UX Shell & Design System
-- [ ] Implementasi Tailwind Config (Dark Theme & Neon Colors).
-- [ ] Pembuatan Layout Sidebar & Navbar (Glassmorphism).
-- [ ] Setup Phosphor Icons Library.
+- [ ] Implementasi Tailwind Config (Dark Theme, Neon Colors, Glassmorphism utilities).
+- [ ] Pembuatan Sidebar Navigasi Modular & Header (Search, API Status, Quick Action).
+- [ ] Setup Phosphor Icons Library & Typography (Inter/Outfit).
 
 ### 🏗️ Phase 3: Database & Core API
-- [ ] Migrasi Database (Siswa, DU/DI, Users).
-- [ ] Pembuatan Resource API untuk Data Utama.
-- [ ] Implementasi Authentication & Role Management.
+- [ ] Migrasi Database: `students`, `industries`, `internships`, `journals`, `notifications`.
+- [ ] Pembuatan Resource API & Controller untuk Data Utama.
+- [ ] Setup Laravel Sanctum/Passport untuk Auth.
 
-### 📈 Phase 4: Interactive Dashboard UI
-- [ ] Integrasi Chart.js untuk Trend Aktivitas.
-- [ ] Mockup Widget Live Map dengan Radar Animation.
-- [ ] Implementasi Realtime Indicators (Status API & Badges).
+### 📈 Phase 4: Overview Insight & Visuals
+- [ ] **Stat Cards**: Implementasi 4 card utama dengan progress bar & badges.
+- [ ] **Activity Chart**: Integrasi Chart.js (Gradient curves, selection weekly/monthly).
+- [ ] **Live Radar Map**: Pembuatan widget GPS dengan CSS animations (pulsing & radar).
 
-### 🤖 Phase 5: AI Integration & Workflow
-- [ ] Setup AI Engine Insight Panel logic.
-- [ ] Implementasi Document Generator (PDF Surats).
-- [ ] Workflow Queue & Approval System.
+### 🤖 Phase 5: AI Engine & Workflow Queue
+- [ ] **AI Insight Panel**: UI untuk rekomendasi & prediksi masalah.
+- [ ] **Workflow Queue**: Tabel antrean dengan status badges & action buttons.
+- [ ] **PDF Generator**: Integrasi DomPDF/Browsershot untuk surat tugas & sertifikat.
 
-### 🚀 Phase 6: Finalization & Future Sync
-- [ ] Penyesuaian API untuk koneksi Frontend Siswa (Mobile App Prep).
-- [ ] Final Bug Fixing & Security Hardening.
+### 🚀 Phase 6: Finalization & Integration
+- [ ] Sinkronisasi data realtime (API Status Indicator logic).
+- [ ] Final UI Polish (Transitions, Hover effects, Glassmorphism refinements).
+- [ ] Dokumentasi API lengkap & Final Testing.
 
 ---
 
