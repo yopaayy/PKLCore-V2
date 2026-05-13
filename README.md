@@ -45,7 +45,7 @@ PKLCore V2 dirancang dengan estetika **Premium & Futuristik (SaaS/Vercel Vibes)*
   - `Settings & API`: Konfigurasi sistem dan integrasi third-party.
 
 ### 2. Dashboard Widgets & Intelligence
-- **Overview Insight Hub:** 
+- **Overview Insight Hub:**
   - **Header Controls:** Filter Tahun Ajaran, Tombol Export, Search Bar API routes, dan tombol **Quick Action**.
   - **Realtime Stat Cards:** Siswa PKL Aktif (counter + percentage), DU/DI Terhubung (+ new badge), Absensi Realtime (progress bar), dan Issue/Offline (alert badge).
   - **Trend Aktivitas & Jurnal:** Grafik multi-layer (Submission vs Validasi) dengan smooth curves dan gradient fill.
